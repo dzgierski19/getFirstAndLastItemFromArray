@@ -1,12 +1,15 @@
-const array = [1, 2, 3, 4, 5];
+const array = [1, 2, 3, 4, 6];
 
 const getFirstAndLastItemFromArray = (array) => {
   isArrayAnArray(array);
   isArrayNotEmpty(array);
-  const firstItem = array.splice(0, 1);
-  const lastItem = array.splice(-1, 1);
-
-  return "FirstElement:" + firstItem + "LastItem:" + lastItem;
+  return (
+    "First Item of an Array: " +
+    array.slice(0, 1) +
+    "\n" +
+    "Last Item of an Array: " +
+    array.slice(-1)
+  );
 };
 
 const isArrayAnArray = (input) => {
