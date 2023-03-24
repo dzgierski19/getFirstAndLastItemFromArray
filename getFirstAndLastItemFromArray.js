@@ -1,14 +1,14 @@
-const array = [1, 2, 3, 4, 6];
+const exampleArray = [1, 2, 3, 4, 5];
 
-const getFirstAndLastItemFromArray = (array) => {
-  isArrayAnArray(array);
-  isArrayNotEmpty(array);
+const getFirstAndLastItemFromArray = (input) => {
+  isArrayAnArray(input);
+  isArrayNotEmpty(input);
   return (
     "First Item of an Array: " +
-    array.slice(0, 1) +
+    input.slice(0, 1) +
     "\n" +
     "Last Item of an Array: " +
-    array.slice(-1)
+    input.slice(-1)
   );
 };
 
@@ -24,5 +24,5 @@ const isArrayNotEmpty = (input) => {
   }
 };
 
-const result1 = getFirstAndLastItemFromArray(array);
+const result1 = getFirstAndLastItemFromArray(exampleArray);
 console.log(result1);
