@@ -1,7 +1,7 @@
 const exampleArray = [1, 2, 3, 4, 5];
 
 const getFirstAndLastItemFromArray = (input) => {
-  isArrayAnArray(input);
+  isArray(input);
   isArrayNotEmpty(input);
   return (
     "First Item of an Array: " +
@@ -12,15 +12,15 @@ const getFirstAndLastItemFromArray = (input) => {
   );
 };
 
-const isArrayAnArray = (input) => {
+const isArray = (input) => {
   if (!Array.isArray(input)) {
-    throw new Error("You must type an Array");
+    throw new Error("You must provide an Array");
   }
 };
 
 const isArrayNotEmpty = (input) => {
   if (input.length === 0) {
-    throw new Error("You must not type an empty Array");
+    throw new Error("You must not provide an empty Array");
   }
 };
 
